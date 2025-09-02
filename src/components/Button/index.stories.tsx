@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import Button from '.';
+import { Button } from '.';
 
 const meta: Meta<typeof Button> = {
   title: 'Button',
@@ -12,5 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    children: 'Button',
+  },
 };
